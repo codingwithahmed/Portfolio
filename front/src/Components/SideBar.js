@@ -1,13 +1,28 @@
 import React from 'react'
 import './SideBar.css'
+import Box from '@material-ui/icons/RssFeed'
+import Search from '@material-ui/icons/Search'
+import Bell from '@material-ui/icons/Notifications'
+import Pane from '@material-ui/icons/AirplanemodeActive'
+import Tv from '@material-ui/icons/Tv'
+import Settings from '@material-ui/icons/Settings'
+import Logout from '@material-ui/icons/Dock'
+import Stats from '@material-ui/icons/MultilineChart'
+import Arrow from '@material-ui/icons/ArrowLeft' 
 
-export default function SideBar() {
+export default function SideBar(props) {
+    const {click } = props
+    const handleClick = () =>{
+     if (click = true) {
+        
+     }
+    } 
     return (
         <div className="sidebar">
             <div className="logo">
                  <img 
                  className="logo_img"
-                 src="https://i.pinimg.com/564x/72/a3/d9/72a3d9408d41335f39e9f014dc35cf44.jpg"
+                 src="https://www.flaticon.com/svg/static/icons/svg/733/733558.svg"
                  alt="Logo"
                  />
                  <h1 className="logo_text" >
@@ -32,7 +47,7 @@ export default function SideBar() {
                 </div>
 
                 <div className="info">
-                    <div>
+                    <div >
                   <h1 className="info_upper">260</h1> 
                   <h3 className="info_lower">posts</h3>
                   </div> <div className="ver_spacer"></div>
@@ -48,22 +63,24 @@ export default function SideBar() {
             </div>
 
            <nav className="menu"> 
-                 <div className="sidebar_link end_bar"> <span /> <a  >Feed</a> </div> 
-                 <div className="sidebar_link"> <span /> <a >Explore</a> </div> 
-                 <div className="sidebar_link"> <span /> <a >Notification</a> </div> 
-                 <div className="sidebar_link"> <span /> <a >Draft</a> </div> 
-                 <div className="sidebar_link"> <span /> <a >IG  TV</a> </div> 
-                 <div className="sidebar_link"> <span /> <a >Stats</a> </div> 
-                 <div className="sidebar_link"> <span /> <a >Settings</a> </div> 
-
+                 <div className="sidebar_link "> <Box style={{fontSize:20 , color:"#Fcac46", marginRight:"1vw"}} /> <a  >Feed</a> </div> 
+                 <div className="sidebar_link"> < Search style={{fontSize:20 , color:"#fff", marginRight:"1vw"}}/> <a >Explore</a> </div> 
+                 <div className="sidebar_link"> <Bell style={{fontSize:20 , color:"#fff", marginRight:"1vw"}} /> <a >Notification</a> </div> 
+                 <div className="sidebar_link"> <Pane style={{fontSize:20 , color:"#fff", marginRight:"1vw"}} /> <a >Direct</a> </div> 
+                 <div className="sidebar_link"> <Tv style={{fontSize:20 , color:"#fff", marginRight:"1vw"}} /> <a >IG  TV</a> </div> 
+                 <div className="sidebar_link"> <Stats style={{fontSize:20 , color:"#fff", marginRight:"1vw"}} /> <a >Stats</a> </div> 
+                 <div className="sidebar_link"> <Settings style={{fontSize:20 , color:"#fff", marginRight:"1vw"}} /> <a >Settings</a> </div> 
 
                
            </nav>
            
            <div className="spacer"></div>
 <div className="logout">
-           <span></span> 
+<Logout style={{fontSize:20 , color:"#fff", marginRight:"1vw"}} />
            <a >Logout</a>
+           </div>
+           <div className="button_logout">
+               <Arrow />
            </div>
         </div>
     )
