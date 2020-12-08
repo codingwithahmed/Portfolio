@@ -73,15 +73,15 @@ export default function SideBar(props) {
 
                
            </nav>
-           
-           <div className="spacer"></div>
+           <div className="button_logout">
+           <div className="spacer"></div>  
+           <Arrow className="sidebar_button" />
+           </div>
 <div className="logout">
 <Logout style={{fontSize:20 , color:"#fff", marginRight:"1vw"}} />
            <a >Logout</a>
            </div>
-           <div className="button_logout">
-               <Arrow />
-           </div>
+
         </div>
     )
 }

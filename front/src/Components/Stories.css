@@ -1,0 +1,23 @@
+.avatar{
+    height: 75px;
+    width: 75px;
+    border-radius: 10000px;
+    padding: 2.5px;
+}
+.avatar_border{
+    margin-right:1vw;
+    margin-left:1vw;
+    height: 80px;
+    width: max-content;
+    border: solid 0.1em transparent;
+    border-radius: 1000px;
+    background-image: linear-gradient(#282A34,#282A34), 
+                      linear-gradient(to right, #E2336B, #Fcac46);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+}
+
+.avatar_border::-webkit-scrollbar {
+    display: none;
+  }

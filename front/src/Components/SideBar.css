@@ -119,4 +119,20 @@
     font-family: 'Open Sans Condensed' , sans-serif;
 
 }
+.button_logout{
+    display: flex;
+    flex-direction: row;
+ }
 
+.sidebar_button{
+    border-radius: 1000px;
+    background-color: #3c3f51;
+    z-index: 5;
+    margin-right: -5%;
+    color: white;
+}
+.sidebar_button:active{
+    height: 40px;
+    width: 40px;
+    margin-right: -1.5vw;
+}
